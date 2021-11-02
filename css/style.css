@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(34, 106, 199, 0.795);
+    font-family: Rubik, 'Courier New', Courier, monospace;
+}
+
+img{
+    background-size: 100%;
+    width: 15vh;
+    padding: 1vh;
+    display: inline-block;
+    transform:rotate(5deg);
+}
+
+.img_1, .img_3{
+    margin-left: 2vw;
+}
+
+.img_2, .img_4{
+    margin-left: 50%;
+}
+
+span{
+    color: #f2f2f2;
+    font-family: monospace;
+    text-transform: capitalize;
+    margin-top: 7vh;
+    padding: 5vw;
+    max-width: 60%;
+    background: linear-gradient(35deg, rgba(0, 0, 255, 0.8), rgba(43, 87, 218, 0.899))
+}
+
+.txt1, .txt3{
+    border-radius: 0 10rem 10rem 0;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.txt2, .txt4{
+    margin-left: 30vw;
+    padding: 10vh;
+    border-radius: 10rem 0 0 10rem ;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+header{
+    box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0, 0, 0, .02), 
+    0 14px 14px rgba(0,0,0,0.6), 
+    0 18px 18px rgba(0,0,0,0.12),
+    0 26px 26px rgba(0,0,0,0.22);
+    z-index: 10;
+}
+
+header,input{
+    margin-top: 0%;
+    height: 10vh;
+    color: aliceblue;
+    display: flex;
+    text-shadow: .05em .05em rgb(114, 114, 114), .15em .15em royalblue;
+    background-color: rgba(82, 80, 79, 0.404);
+    display:flex;
+    align-items: center;
+    background-color: #10339c;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0 2.5em 0 2.5em ;
+    border-radius:0 0 4rem 0;
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    background: linear-gradient(35deg, blue, royalblue);
+    text-shadow: .05em .05em rgba(202, 200, 200, 0.514), .18em .18em #0f2d74;
+    box-shadow: .05em 0 rgba(87, 80, 80, 0.993), .15em 0 rgba(72, 83, 131, 0.178), .25em 0 rgba(39, 39, 39, 0.363);
+}
+
+header li, header input{
+    font-size: 22px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+header li,header input{
+    border: 1px solid royalblue;
+    border-radius: 2rem;
+    padding: 1vw;
+}
+
+
+  li, input{
+    margin-left: 5vw;
+    font-size: medium;
+    height: min-content;
+    transition: .08s;
+}
+
+ li:hover,input:hover{
+    color:#c5c5c500;
+    text-shadow: .15em .15em #f2f2f2;
+}
+
+aside{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu{
+    display: none;
+}
+
+menu{
+    margin: 0;
+    height: 100%;
+    width: 30vh;
+    background-color: rgba(28, 67, 185, 0.80);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    color: #f2f2f2;
+    text-shadow: .05em .05em rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+    transition: all 5s;
+}
+
+#menu ul{
+    flex-direction: column;
+    font-size: large;
+    margin-top: 20vh;
+}
+
+menu li, h4{
+    margin: 1vw;
+    text-transform: capitalize;
+    line-height: 1vw;
+    border-right: 1px solid #f2f2f2;
+}
+
+
+menu li:nth-child(2):hover {
+    border-right: 30px solid whitesmoke;
+}
+menu li:nth-child(3):hover {
+    border-right: 55px solid whitesmoke;
+}
+menu li:nth-child(5):hover {
+    border-right: 60px solid whitesmoke;
+}
+menu li:nth-child(6):hover {
+    border-right: 70px solid whitesmoke;
+}
+menu li:nth-child(7):hover {
+    border-right: 75px solid whitesmoke;
+}
+
+ul hr{
+    width: 5vw;
+    height: .5vh;
+    background: rgb(14, 49, 201);
+    border: none;
+}
+ul hr:last-child{
+    background: rgb(68, 68, 68);
+}
+
+button,input{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+a{
+    text-decoration:none ;
+    color: inherit;
+}
+
+.wall{
+    background: url(https://miro.medium.com/max/6300/1*iPtHNRT5IfUXXDT4JHgnfg.jpeg);
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    z-index: 1;
+    margin-top: 5vh;
+    border: 5px solid royalblue;
+}
+
+h2{
+    position: absolute;
+    bottom: 0;
+    padding: 2vh ;
+    color: #f2f2f2;
+    width: 25vh;
+    border-radius: 0 2rem 2rem 0;
+    background: linear-gradient(35deg, blue, royalblue);
+    text-shadow: .05em .05em rgba(202, 200, 200, 0.514), .18em .18em #0f2d74;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0, 0, 0, .02), 
+    0 14px 14px rgba(0,0,0,0.6), 
+    0 18px 18px rgba(0,0,0,0.12),
+    0 26px 26px rgba(0,0,0,0.22);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    header{
+        background: linear-gradient(35deg, blue, royalblue);
+    }
+    header{
+        margin-top: 0%;
+        height: 10vh;
+        color: aliceblue;
+        text-shadow: .05em .05em rgb(114, 114, 114), .15em .15em royalblue;
+        background-color: rgba(82, 80, 79, 0.404);
+        background-color: #10339c;
+        overflow-x: hidden;
+    }
+    h1{
+        padding-left: 10px;
+        font-size: 30px;
+        text-shadow: .05em .05em rgba(202, 200, 200, 0.514), .18em .18em #0f2d74;
+        
+    }
+
+    button, h4{
+        padding: 5vw;
+    }
+
+    input{
+        position: relative;
+        left:20vw;
+    }
+
+    .show{
+        display: none;
+    }
+
+    menu li{
+        padding: 30px;
+
+    }
+
+    .img_2, .img_4{
+        margin-left: 0%;
+    }
+
+    .txt2, .txt4{
+        padding: 3vh 0 1vh 7vh;
+        height: 25vh;
+    }
+
+    .wall{
+        background-size: 100%;
+        width: 100%;
+        height: 250px;
+    }
+    
+    h2{
+        padding: 2vh;
+        top: 37%;
+        bottom: 50%;
+    }
+    
+  }
